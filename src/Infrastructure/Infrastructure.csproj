@@ -18,14 +18,14 @@
     </PropertyGroup>    
 
     <ItemGroup>
-      <Reference Include="Application.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Application.Abstractions\bin\Debug\net5.0\Application.Abstractions.dll</HintPath>
+      <Reference Include="Dka.Net5.CleanArchitecture.Application.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Application.Abstractions\bin\Debug\net5.0\Dka.Net5.CleanArchitecture.Application.Abstractions.dll</HintPath>
       </Reference>
-      <Reference Include="Domain.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Application.Abstractions\bin\Debug\net5.0\Domain.Common.dll</HintPath>
+      <Reference Include="Dka.Net5.CleanArchitecture.Domain.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Application.Abstractions\bin\Debug\net5.0\Dka.Net5.CleanArchitecture.Domain.Common.dll</HintPath>
       </Reference>
-      <Reference Include="Infrastructure.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Infrastructure.Abstractions\bin\Debug\net5.0\Infrastructure.Abstractions.dll</HintPath>
+      <Reference Include="Dka.Net5.CleanArchitecture.Infrastructure.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Infrastructure.Abstractions\bin\Debug\net5.0\Dka.Net5.CleanArchitecture.Infrastructure.Abstractions.dll</HintPath>
       </Reference>
     </ItemGroup>
 
