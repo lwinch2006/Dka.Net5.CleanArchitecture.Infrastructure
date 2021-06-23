@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>Dka.Net5.CleanArchitecture.Infrastructure</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>..\..\..\Dka.Net5.CleanArchitecture\src\WebUI\bin\Debug\</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <OutputPath>..\..\..\Dka.Net5.CleanArchitecture\src\WebUI\bin\Release\</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    </PropertyGroup>    
+
+    <ItemGroup>
+      <Reference Include="Application.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Application.Abstractions\bin\Debug\net5.0\Application.Abstractions.dll</HintPath>
+      </Reference>
+      <Reference Include="Domain.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Application.Abstractions\bin\Debug\net5.0\Domain.Common.dll</HintPath>
+      </Reference>
+      <Reference Include="Infrastructure.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\Dka.Net5.CleanArchitecture\src\Infrastructure.Abstractions\bin\Debug\net5.0\Infrastructure.Abstractions.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.90" />
+      <PackageReference Include="dbup-sqlserver" Version="4.5.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Migrations\Scripts\202106231250-create_table_tenants.sql" />
+      <EmbeddedResource Include="Migrations\Scripts\202106231250-create_table_tenants.sql" />
+      <None Remove="Migrations\Scripts\Development\202106231252-update-table-tenants-seed-dev-data.sql" />
+      <EmbeddedResource Include="Migrations\Scripts\Development\202106231252-update-table-tenants-seed-dev-data.sql" />
+    </ItemGroup>
+
+</Project>
